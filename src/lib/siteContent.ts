@@ -6,6 +6,10 @@ export const siteContent = {
     lang: 'ja',
   },
 
+  logo: {
+    subtitle: '都会の中の上質な隠れ家',
+  },
+
   nav: {
     links: [
       { label: 'ホーム', href: '#hero' },
@@ -234,111 +238,76 @@ export const siteContent = {
   space: {
     label: '空間',
     headline: 'ディテールに宿る哲学',
-    subtext: 'ラウンジ空間を形作るすべての要素は、意図的に配置されています。落ち着いた照明、厳選された音楽、上質な素材。すべての細部が、お客様に忘れられない体験を提供するために存在します。',
-    features: [
+    subtext: 'ラウンジ空間を形作るすべての要素は、意図的に配置されています。落ち着いた照明、厳選された音楽、上質な素材。すべての細部が、お客様に忘れられない体験を提供するために存在しています。',
+    gallery: [
       {
-        icon: 'coffee',
-        label: '自家焙煎設備',
-        description: '店内に完備された焙煎機で、毎日新鮮な豆を焙煎',
-      },
-      {
-        icon: 'music',
-        label: '精選された音楽',
-        description: 'ジャズとアンビエントの厳選プレイリスト',
-      },
-      {
-        icon: 'chair',
-        label: 'デザイナーズ家具',
-        description: '北欧デザインとモダンな美学の融合',
-      },
-      {
-        icon: 'lightbulb',
-        label: '照明デザイン',
-        description: '自然光と人工照明の完璧なバランス',
-      },
-    ],
-    images: [
-      {
-        src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80',
-        alt: '上質な照明が織りなす空間',
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80',
-        alt: 'デザイナーズ家具が配置された空間',
+        src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=80',
+        alt: '上質なラウンジインテリア',
+        caption: '洗練されたデザインと快適性の融合',
       },
       {
         src: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80',
-        alt: 'ラウンジの全体像',
+        alt: '窓際のプライベート席',
+        caption: '自然光が差し込む特別な空間',
       },
       {
-        src: 'https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=800&q=80',
-        alt: '細部までこだわったインテリア',
+        src: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80',
+        alt: 'バリスタカウンター',
+        caption: '職人技を間近で体験',
       },
     ],
   },
 
   contact: {
     label: 'お問い合わせ',
-    headline: 'お気軽にご連絡ください',
-    subtext: 'ご質問、ご意見、またはご訪問に関するお問い合わせは、以下のフォームからお送りください。できる限り早くご返信いたします。',
-    form: {
-      name: {
-        label: 'お名前',
-        placeholder: 'お名前を入力してください',
-        required: true,
-      },
-      email: {
-        label: 'メールアドレス',
-        placeholder: 'your@email.com',
-        required: true,
-      },
-      phone: {
-        label: '電話番号',
-        placeholder: '090-1234-5678',
-        required: false,
-      },
-      message: {
-        label: 'メッセージ',
-        placeholder: 'お問い合わせ内容をご記入ください...',
-        required: true,
-      },
-      submit: '送信',
+    headline: 'ご来店をお待ちしております',
+    subtext: 'お気軽にお問い合わせください。特別なご要望にも対応いたします。',
+    address: {
+      title: '住所',
+      line1: '〒150-0001',
+      line2: '東京都渋谷区神宮前 3-4-5',
     },
-    info: {
-      address: {
-        label: '住所',
-        value: '東京都渋谷区恵比寿 1-2-3',
-      },
-      hours: {
-        label: '営業時間',
-        value: '火曜日 - 日曜日: 10:00 - 19:00',
-        note: '月曜定休',
-      },
-      contact: {
-        label: 'お問い合わせ',
-        email: 'hello@loungex.jp',
-        phone: '+81 3-1234-5678',
-      },
+    hours: {
+      title: '営業時間',
+      weekday: '平日: 10:00 - 21:00',
+      weekend: '週末: 9:00 - 22:00',
+      closed: '定休日: 火曜日',
     },
+    contact: {
+      title: 'お問い合わせ',
+      phone: '03-1234-5678',
+      email: 'info@loungex.jp',
+      wechat: 'loungeX_tokyo',
+    },
+    social: [
+      {
+        platform: 'Instagram',
+        handle: '@loungex_tokyo',
+        url: 'https://instagram.com/loungex_tokyo',
+      },
+      {
+        platform: 'Twitter',
+        handle: '@loungeX_jp',
+        url: 'https://twitter.com/loungeX_jp',
+      },
+      {
+        platform: 'Facebook',
+        handle: 'loungeXTokyo',
+        url: 'https://facebook.com/loungeXTokyo',
+      },
+    ],
+    mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.370853990647!2d139.7093286!3d35.6717698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQwJzE4LjQiTiAxMznCsDQyJzMzLjYiRQ!5e0!3m2!1sen!2sjp!4v1234567890',
   },
 
   footer: {
-    tagline: 'すべての一杯が物語を語る',
-    copyright: '© 2024 lounge X. All rights reserved.',
+    tagline: '一杯一杯のコーヒーに、価値がある',
     links: [
-      { label: 'プライバシーポリシー', href: '#' },
-      { label: '利用規約', href: '#' },
+      { label: 'ホーム', href: '#hero' },
+      { label: '私たちの想い', href: '#story' },
+      { label: 'メニュー', href: '#menu' },
+      { label: '空間', href: '#space' },
+      { label: 'お問い合わせ', href: '#contact' },
     ],
-    social: {
-      instagram: 'https://instagram.com/loungex',
-      twitter: 'https://twitter.com/loungex',
-    },
-  },
-
-  logo: {
-    text: 'lounge X',
-    subtitle: '上質な時間を',
+    copyright: '© 2024 lounge X. すべての権利を保有します。',
   },
 };
-
-export type SiteContent = typeof siteContent;
