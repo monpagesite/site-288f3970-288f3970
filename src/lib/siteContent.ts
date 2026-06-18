@@ -1,8 +1,8 @@
-// Site content for カフェ
+// Site content for lounge X
 export const siteContent = {
   meta: {
-    title: 'カフェ — 都会の中の上質な隠れ家',
-    description: '自家焙煎スペシャルティコーヒー × シェフの日替わり限定スイーツ × プライベート貸切体験。完全予約制の上質なカフェ空間、1日12組様限定。',
+    title: 'lounge X — 都会の中の上質な隠れ家',
+    description: '自家焙煎スペシャルティコーヒー × シェフの日替わり限定スイーツ × プライベート空間。上質なラウンジ空間でのくつろぎの時間。',
     lang: 'ja',
   },
 
@@ -11,21 +11,20 @@ export const siteContent = {
       { label: 'ホーム', href: '#hero' },
       { label: '私たちの想い', href: '#story' },
       { label: 'メニュー', href: '#menu' },
-      { label: '予約', href: '#booking' },
       { label: '空間', href: '#space' },
       { label: 'お問い合わせ', href: '#contact' },
     ],
-    cta: 'ご予約',
+    cta: 'お問い合わせ',
   },
 
   hero: {
     overline: '都会の中の上質な隠れ家',
-    headline: ['一杯一杯のコーヒーに、', '予約する価値がある'],
-    subtext: '自家焙煎スペシャルティコーヒー × シェフの日替わり限定スイーツ × プライベート貸切体験。ここでは、時間が品質のために流れる。',
-    cta: 'ご予約はこちら',
-    trustIndicator: '1日12組様限定 · 事前予約優先',
+    headline: ['一杯一杯のコーヒーに、', '価値がある'],
+    subtext: '自家焙煎スペシャルティコーヒー × シェフの日替わり限定スイーツ × プライベート空間。ここでは、時間が品質のために流れる。',
+    cta: 'もっと詳しく',
+    trustIndicator: '厳選産地豆 · 店内焙煎',
     image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80',
-    imageAlt: '上質なカフェ空間',
+    imageAlt: '上質なラウンジ空間',
     badge: {
       text: '厳選産地豆 · 店内焙煎',
       icon: 'coffee',
@@ -36,9 +35,9 @@ export const siteContent = {
     label: '私たちの想い',
     headline: 'コーヒーは、時間と温度の芸術',
     paragraphs: [
-      'カフェは2021年、バリスタオーナーによって創業されました。「すべてのコーヒーは、待つ価値のある体験であるべき」というシンプルな信念から生まれました。世界中の厳選された産地から直接コーヒー豆を調達し、店内で焙煎。すべての豆が最高の状態で抽出されることを保証しています。',
+      'lounge Xは2021年、バリスタオーナーによって創業されました。「すべてのコーヒーは、待つ価値のある体験であるべき」というシンプルな信念から生まれました。世界中の厳選された産地から直接コーヒー豆を調達し、店内で焙煎。すべての豆が最高の状態で抽出されることを保証しています。',
       'シェフが毎朝手作りする限定スイーツは、フランス菓子から日本の生クリームロールまで、伝統的な技法と旬の食材の完璧なバランスを追求しています。本当の品質は過度な装飾を必要としません。細部がすべてを語ります。',
-      'ここは単なるカフェではなく、都会の中の精神的な憩いの場です。1日の来客数を制限することで、すべてのお客様に十分なスペース、時間、そして心のこもったサービスを提供できます。完全予約制により、すべての訪問に万全の準備をしています。',
+      'ここは単なるラウンジではなく、都会の中の精神的な憩いの場です。すべてのお客様に十分なスペース、時間、そして心のこもったサービスを提供できます。上質な空間で、心ゆくまでおくつろぎください。',
     ],
     signature: '— オーナー 陳 晨',
     images: [
@@ -232,110 +231,48 @@ export const siteContent = {
     ],
   },
 
-  booking: {
-    label: 'ご予約',
-    headline: 'すべての出会いに、特別な時間を',
-    subtext: '当店は完全予約制を採用しており、すべてのお客様に静かで快適なひとときをお楽しみいただけます。事前にご予約いただければ、最高のお席をご用意いたします。',
-    features: [
-      {
-        icon: 'users',
-        title: '1日限定',
-        description: '最大12組様まで、サービス品質を保証',
-      },
-      {
-        icon: 'clock',
-        title: 'フレキシブルな時間帯',
-        description: '10:00-22:00、2時間枠からお選びいただけます',
-      },
-      {
-        icon: 'sparkles',
-        title: '貸切サービス',
-        description: 'イベント貸切対応、7日前までのご予約が必要',
-      },
-    ],
-    form: {
-      namePlaceholder: 'お名前',
-      phonePlaceholder: 'お電話番号',
-      emailPlaceholder: 'メールアドレス',
-      datePlaceholder: 'ご希望日',
-      timePlaceholder: 'ご希望時間',
-      guestsPlaceholder: '人数',
-      messagePlaceholder: 'ご要望やアレルギー情報など',
-      submitButton: '予約を確定する',
-      successMessage: 'ご予約ありがとうございます！24時間以内にご連絡いたします。',
-      errorMessage: '送信中にエラーが発生しました。もう一度お試しください。',
-    },
-    timeSlots: [
-      '10:00 - 12:00',
-      '12:00 - 14:00',
-      '14:00 - 16:00',
-      '16:00 - 18:00',
-      '18:00 - 20:00',
-      '20:00 - 22:00',
-    ],
-    partySize: [
-      { value: '1', label: '1名様' },
-      { value: '2', label: '2名様' },
-      { value: '3', label: '3名様' },
-      { value: '4', label: '4名様' },
-      { value: '5', label: '5名様' },
-      { value: '6', label: '6名様' },
-      { value: '7+', label: '7名様以上（貸切）' },
-    ],
-  },
-
   space: {
     label: '空間',
-    headline: '細部までこだわった憩いの場',
-    description: '北欧デザインと日本の美意識が融合した空間。自然光が差し込む大きな窓、職人による手作りの家具、慎重に選ばれた音楽。すべてがあなたの体験を豊かにします。',
+    headline: 'ディテールに宿る哲学',
+    subtext: 'ラウンジ空間を形作るすべての要素は、意図的に配置されています。落ち着いた照明、厳選された音楽、上質な素材。すべての細部が、お客様に忘れられない体験を提供するために存在します。',
     features: [
       {
-        icon: 'home',
-        title: '親密な雰囲気',
-        description: '最大32席、各席に十分なプライベート空間',
-      },
-      {
-        icon: 'wifi',
-        title: '高速Wi-Fi',
-        description: '仕事や勉強にも最適な静かな環境',
+        icon: 'coffee',
+        label: '自家焙煎設備',
+        description: '店内に完備された焙煎機で、毎日新鮮な豆を焙煎',
       },
       {
         icon: 'music',
-        title: 'キュレーションされた音楽',
-        description: 'ジャズからクラシックまで、厳選されたプレイリスト',
+        label: '精選された音楽',
+        description: 'ジャズとアンビエントの厳選プレイリスト',
       },
       {
-        icon: 'camera',
-        title: 'インスタ映え',
-        description: '自然光と美しいインテリア、撮影歓迎',
+        icon: 'chair',
+        label: 'デザイナーズ家具',
+        description: '北欧デザインとモダンな美学の融合',
       },
       {
-        icon: 'leaf',
-        title: 'グリーン装飾',
-        description: '厳選された観葉植物が空間を彩ります',
-      },
-      {
-        icon: 'accessibility',
-        title: 'バリアフリー',
-        description: '車椅子対応、快適にご利用いただけます',
+        icon: 'lightbulb',
+        label: '照明デザイン',
+        description: '自然光と人工照明の完璧なバランス',
       },
     ],
-    gallery: [
+    images: [
+      {
+        src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80',
+        alt: '上質な照明が織りなす空間',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80',
+        alt: 'デザイナーズ家具が配置された空間',
+      },
       {
         src: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80',
-        alt: '温かみのある照明のカフェインテリア',
+        alt: 'ラウンジの全体像',
       },
       {
-        src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80',
-        alt: '窓際の快適な座席エリア',
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1559496417-e7f25c0f07f6?auto=format&fit=crop&w=800&q=80',
-        alt: 'ミニマルなカウンターデザイン',
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=800&q=80',
-        alt: '温かみのある木製家具と装飾',
+        src: 'https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=800&q=80',
+        alt: '細部までこだわったインテリア',
       },
     ],
   },
@@ -343,39 +280,65 @@ export const siteContent = {
   contact: {
     label: 'お問い合わせ',
     headline: 'お気軽にご連絡ください',
-    subtext: 'ご質問、プライベートイベント、コラボレーションのご相談など、喜んで対応させていただきます。',
-    address: {
-      title: '所在地',
-      line1: '東京都渋谷区代々木1-2-3',
-      line2: '代々木ビル 1F',
+    subtext: 'ご質問、ご意見、またはご訪問に関するお問い合わせは、以下のフォームからお送りください。できる限り早くご返信いたします。',
+    form: {
+      name: {
+        label: 'お名前',
+        placeholder: 'お名前を入力してください',
+        required: true,
+      },
+      email: {
+        label: 'メールアドレス',
+        placeholder: 'your@email.com',
+        required: true,
+      },
+      phone: {
+        label: '電話番号',
+        placeholder: '090-1234-5678',
+        required: false,
+      },
+      message: {
+        label: 'メッセージ',
+        placeholder: 'お問い合わせ内容をご記入ください...',
+        required: true,
+      },
+      submit: '送信',
     },
-    hours: {
-      title: '営業時間',
-      weekday: '火曜日〜金曜日：10:00 - 22:00',
-      weekend: '土曜日・日曜日：09:00 - 23:00',
-      closed: '定休日：月曜日',
+    info: {
+      address: {
+        label: '住所',
+        value: '東京都渋谷区恵比寿 1-2-3',
+      },
+      hours: {
+        label: '営業時間',
+        value: '火曜日 - 日曜日: 10:00 - 19:00',
+        note: '月曜定休',
+      },
+      contact: {
+        label: 'お問い合わせ',
+        email: 'hello@loungex.jp',
+        phone: '+81 3-1234-5678',
+      },
     },
-    contact: {
-      title: 'お問い合わせ',
-      phone: '+81 3-1234-5678',
-      email: 'hello@cafe-tokyo.jp',
-      wechat: 'Line ID: @cafetokyo',
-    },
-    social: [
-      { handle: '@cafe.tokyo', url: 'https://instagram.com/cafe.tokyo' },
-      { handle: 'Facebook', url: 'https://facebook.com/cafe.tokyo' },
-      { handle: '@cafe_tokyo', url: 'https://twitter.com/cafe_tokyo' },
-    ],
-    mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8277649933296!2d139.70171431525845!3d35.68123998019419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f665e6b8e2!2z5Luj44CF5pyo!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp',
   },
 
   footer: {
-    tagline: '都会の中の上質な隠れ家。自家焙煎のスペシャルティコーヒーと手作りスイーツで、特別なひとときをお届けします。',
+    tagline: 'すべての一杯が物語を語る',
+    copyright: '© 2024 lounge X. All rights reserved.',
     links: [
-      { label: 'プライバシーポリシー', href: '#privacy' },
-      { label: '利用規約', href: '#terms' },
-      { label: '採用情報', href: '#careers' },
+      { label: 'プライバシーポリシー', href: '#' },
+      { label: '利用規約', href: '#' },
     ],
-    copyright: '© 2024 カフェ. All rights reserved.',
+    social: {
+      instagram: 'https://instagram.com/loungex',
+      twitter: 'https://twitter.com/loungex',
+    },
+  },
+
+  logo: {
+    text: 'lounge X',
+    subtitle: '上質な時間を',
   },
 };
+
+export type SiteContent = typeof siteContent;

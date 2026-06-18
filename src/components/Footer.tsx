@@ -13,9 +13,21 @@ export const Footer: React.FC = () => {
           {/* Logo */}
           <button
             onClick={scrollToTop}
-            className="text-3xl font-serif font-semibold hover:text-accent transition-colors"
+            className="flex items-center gap-3 group"
           >
-            カフェ
+            {/* Elegant Modern Logo */}
+            <div className="relative w-10 h-10 flex items-center justify-center">
+              <div className="absolute inset-0 bg-accent rounded-lg transform rotate-45"></div>
+              <span className="relative text-primary font-serif font-bold text-xl z-10">X</span>
+            </div>
+            <div className="flex flex-col items-start">
+              <span className="text-xl font-serif font-semibold text-background group-hover:text-accent transition-colors leading-none">
+                lounge X
+              </span>
+              <span className="text-[10px] text-background/70 font-sans tracking-wider leading-none mt-0.5">
+                {siteContent.logo.subtitle}
+              </span>
+            </div>
           </button>
 
           {/* Tagline */}

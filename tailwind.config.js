@@ -7,14 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3D2817',
-        secondary: '#8B6F47',
-        accent: '#B8860B',
-        background: '#FAF7F2',
-        surface: '#F0EBE3',
-        text: '#2C1810',
-        'text-muted': '#6B5D52',
-        border: '#E0D5C7',
+        primary: '#2C3440',
+        secondary: '#5A6577',
+        accent: '#E8C547',
+        background: '#F5F7FA',
+        surface: '#FFFFFF',
+        text: '#1A1F2B',
+        'text-muted': '#6B7280',
+        border: '#D1D5DB',
       },
       fontFamily: {
         serif: ['Cormorant Garamond', 'Georgia', 'serif'],

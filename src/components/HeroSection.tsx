@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Calendar, Coffee } from 'lucide-react';
+import { ArrowDown, Coffee } from 'lucide-react';
 import { siteContent } from '../lib/siteContent';
 
 export const HeroSection: React.FC = () => {
@@ -16,8 +16,8 @@ export const HeroSection: React.FC = () => {
     }
   }, []);
 
-  const scrollToBooking = () => {
-    const element = document.querySelector('#booking');
+  const scrollToStory = () => {
+    const element = document.querySelector('#story');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -63,10 +63,10 @@ export const HeroSection: React.FC = () => {
               className="flex flex-col gap-4 opacity-0 translate-y-8 transition-all duration-700"
             >
               <button
-                onClick={scrollToBooking}
-                className="inline-flex items-center justify-center gap-3 bg-accent text-white px-10 py-5 rounded-full text-lg font-medium hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-[1.02] w-full sm:w-auto"
+                onClick={scrollToStory}
+                className="inline-flex items-center justify-center gap-3 bg-accent text-primary px-10 py-5 rounded-full text-lg font-semibold hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-[1.02] w-full sm:w-auto"
               >
-                <Calendar size={22} />
+                <ArrowDown size={22} />
                 {siteContent.hero.cta}
               </button>
 

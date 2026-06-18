@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Calendar } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { siteContent } from '../lib/siteContent';
 
 export const Header: React.FC = () => {
@@ -36,9 +36,21 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('#hero')}
-            className="text-2xl font-serif font-semibold text-primary hover:text-secondary transition-colors"
+            className="flex items-center gap-3 group"
           >
-            カフェ
+            {/* Elegant Modern Logo */}
+            <div className="relative w-10 h-10 flex items-center justify-center">
+              <div className="absolute inset-0 bg-accent rounded-lg transform rotate-45"></div>
+              <span className="relative text-primary font-serif font-bold text-xl z-10">X</span>
+            </div>
+            <div className="flex flex-col items-start">
+              <span className="text-xl font-serif font-semibold text-primary group-hover:text-secondary transition-colors leading-none">
+                lounge X
+              </span>
+              <span className="text-[10px] text-text-muted font-sans tracking-wider leading-none mt-0.5">
+                {siteContent.logo.subtitle}
+              </span>
+            </div>
           </button>
 
           {/* Desktop Navigation */}
@@ -56,10 +68,9 @@ export const Header: React.FC = () => {
 
           {/* Desktop CTA */}
           <button
-            onClick={() => scrollToSection('#booking')}
-            className="hidden md:inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full text-sm font-medium hover:brightness-110 transition-all duration-300 shadow-md hover:shadow-lg"
+            onClick={() => scrollToSection('#contact')}
+            className="hidden md:inline-flex items-center gap-2 bg-accent text-primary px-6 py-3 rounded-full text-sm font-semibold hover:brightness-110 transition-all duration-300 shadow-md hover:shadow-lg"
           >
-            <Calendar size={18} />
             {siteContent.nav.cta}
           </button>
 
@@ -88,10 +99,9 @@ export const Header: React.FC = () => {
               </button>
             ))}
             <button
-              onClick={() => scrollToSection('#booking')}
-              className="mt-4 flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-full text-sm font-medium hover:brightness-110 transition-all duration-300 shadow-md"
+              onClick={() => scrollToSection('#contact')}
+              className="mt-4 flex items-center justify-center gap-2 bg-accent text-primary px-6 py-3 rounded-full text-sm font-semibold hover:brightness-110 transition-all duration-300 shadow-md"
             >
-              <Calendar size={18} />
               {siteContent.nav.cta}
             </button>
           </nav>
