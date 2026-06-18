@@ -52,6 +52,15 @@ export const ContactSection: React.FC = () => {
           >
             {siteContent.contact.headline}
           </h2>
+          <p
+            className={`text-lg text-text-muted max-w-2xl mx-auto mt-6 transition-all duration-700 delay-200 ${
+              isVisible
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
+            {siteContent.contact.subtext}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -137,13 +146,15 @@ export const ContactSection: React.FC = () => {
             {/* Social Media */}
             <div className="bg-background rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-xl font-serif font-semibold text-primary mb-4">
-                关注我们
+                フォローする
               </h3>
               <div className="flex flex-wrap gap-3">
                 {siteContent.contact.social.map((social, index) => (
                   <a
                     key={index}
                     href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-surface rounded-full text-sm text-text-muted hover:text-primary hover:bg-accent/10 transition-all duration-300"
                   >
                     <span>{social.handle}</span>
@@ -170,7 +181,7 @@ export const ContactSection: React.FC = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="カフェ Location Map"
+                title="カフェの地図"
               />
             </div>
           </div>

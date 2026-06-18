@@ -112,13 +112,13 @@ export const MenuSection: React.FC = () => {
                           {item.featured && (
                             <span className="inline-flex items-center gap-1 bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-medium">
                               <Star size={12} fill="currentColor" />
-                              招牌推荐
+                              おすすめ
                             </span>
                           )}
                           {item.limited && (
                             <span className="inline-flex items-center gap-1 bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-medium">
                               <Sparkles size={12} />
-                              限量
+                              限定
                             </span>
                           )}
                         </h3>

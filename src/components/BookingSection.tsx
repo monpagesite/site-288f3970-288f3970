@@ -28,7 +28,7 @@ export const BookingSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Form submission would be handled here
-    alert('预订功能演示：实际部署时将连接到预订系统');
+    alert(siteContent.booking.form.successMessage);
   };
 
   const iconMap = {
@@ -113,7 +113,7 @@ export const BookingSection: React.FC = () => {
                   htmlFor="name"
                   className="block text-sm font-medium text-primary mb-2"
                 >
-                  姓名
+                  お名前
                 </label>
                 <input
                   type="text"
@@ -129,7 +129,7 @@ export const BookingSection: React.FC = () => {
                   htmlFor="phone"
                   className="block text-sm font-medium text-primary mb-2"
                 >
-                  联系电话
+                  お電話番号
                 </label>
                 <input
                   type="tel"
@@ -145,7 +145,7 @@ export const BookingSection: React.FC = () => {
                   htmlFor="date"
                   className="block text-sm font-medium text-primary mb-2"
                 >
-                  预约日期
+                  ご希望日
                 </label>
                 <input
                   type="date"
@@ -160,20 +160,19 @@ export const BookingSection: React.FC = () => {
                   htmlFor="time"
                   className="block text-sm font-medium text-primary mb-2"
                 >
-                  时段选择
+                  時間帯
                 </label>
                 <select
                   id="time"
                   required
                   className="w-full px-4 py-3 rounded-xl border border-border bg-surface focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all"
                 >
-                  <option value="">请选择时段</option>
-                  <option value="10:00-12:00">10:00 - 12:00</option>
-                  <option value="12:00-14:00">12:00 - 14:00</option>
-                  <option value="14:00-16:00">14:00 - 16:00</option>
-                  <option value="16:00-18:00">16:00 - 18:00</option>
-                  <option value="18:00-20:00">18:00 - 20:00</option>
-                  <option value="20:00-22:00">20:00 - 22:00</option>
+                  <option value="">時間帯を選択してください</option>
+                  {siteContent.booking.timeSlots.map((slot, index) => (
+                    <option key={index} value={slot}>
+                      {slot}
+                    </option>
+                  ))}
                 </select>
               </div>
 
@@ -189,12 +188,12 @@ export const BookingSection: React.FC = () => {
                   required
                   className="w-full px-4 py-3 rounded-xl border border-border bg-surface focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all"
                 >
-                  <option value="">请选择人数</option>
-                  <option value="1">1人</option>
-                  <option value="2">2人</option>
-                  <option value="3">3人</option>
-                  <option value="4">4人</option>
-                  <option value="5+">5人及以上</option>
+                  <option value="">人数を選択してください</option>
+                  {siteContent.booking.partySize.map((size, index) => (
+                    <option key={index} value={size.value}>
+                      {size.label}
+                    </option>
+                  ))}
                 </select>
               </div>
             </div>
@@ -204,7 +203,7 @@ export const BookingSection: React.FC = () => {
                 htmlFor="message"
                 className="block text-sm font-medium text-primary mb-2"
               >
-                特殊需求（选填）
+                ご要望（任意）
               </label>
               <textarea
                 id="message"
@@ -217,14 +216,13 @@ export const BookingSection: React.FC = () => {
             <div className="flex flex-col items-center gap-4">
               <button
                 type="submit"
-                className="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-accent text-white px-12 py-4 rounded-full text-lg font-medium hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full text-base font-medium hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 <Send size={20} />
-                {siteContent.booking.form.submit}
+                {siteContent.booking.form.submitButton}
               </button>
-
-              <p className="text-sm text-text-muted text-center">
-                {siteContent.booking.notice}
+              <p className="text-sm text-text-muted">
+                送信後、24時間以内にご連絡いたします
               </p>
             </div>
           </form>
